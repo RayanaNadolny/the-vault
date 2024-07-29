@@ -1,0 +1,18 @@
+header {
+    background-color: #dc143c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    padding: 0.7rem;
+    position: relative;
+
+    h1 {
+        color: white;
+    }
+
+    .right {
+        position: absolute;
+        right: 0.7rem
+    }
+}

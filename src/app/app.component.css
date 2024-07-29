@@ -1,0 +1,25 @@
+.app-container {
+    display: grid;
+    grid-template-columns: 20rem 1fr 20rem;
+    grid-template-rows: 4rem 1fr;
+    grid-template-areas: 
+        'header header header'
+        'note-list main-content todo-list';
+    min-height: 100vh;
+
+    app-header {
+        grid-area: header;
+    }
+
+    app-note-list {
+        grid-area: note-list;
+    }
+
+    app-main-content {
+        grid-area: main-content;
+    }
+
+    app-todo-list {
+        grid-area: todo-list;
+    }
+}

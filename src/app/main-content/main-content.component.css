@@ -1,0 +1,13 @@
+.component-container {
+    padding: 1rem 2rem;
+    height: 100%;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 100%;
+    font-size: x-large;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+}
