@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
@@ -8,18 +8,18 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto';
 }
 
 :root {
-    --background: #E7E3DE;
+    --background: #ebebeb;
 }
 
 .p-editor-container {
     height: 730px;
     max-width: 100%;
-
+    
     p {
         font-size: large;
+        font-family: 'Roboto';
     }
 }

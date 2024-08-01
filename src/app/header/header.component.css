@@ -9,6 +9,8 @@ header {
 
     h1 {
         color: white;
+        font-family: 'Cormorant Garamond';
+        font-size: 3.2rem;
     }
 
     .right {
