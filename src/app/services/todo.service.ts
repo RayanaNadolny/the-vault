@@ -23,8 +23,15 @@ export class TodoService {
     })
   }
 
-  async deleteTodo(id: string) {
+  uptadeTodoState(id: string, completed: boolean) {
     const docRef = doc(this.firestore, 'todos', id);
-    await deleteDoc(docRef);
+    updateDoc(docRef, {
+      completed: completed
+    })
+  }
+
+  deleteTodo(id: string) {
+    const docRef = doc(this.firestore, 'todos', id);
+    deleteDoc(docRef);
   }
 }

@@ -1,7 +1,7 @@
 .component-container {
     background-color: var(--background);
     height: 100%;
-    box-shadow: -4px 0px 6px -3px rgba(0,0,0,0.34);
+    box-shadow: -4px 0px 6px -3px rgba(0, 0, 0, 0.34);
     padding: 2rem;
 
     h2 {
@@ -14,26 +14,30 @@
         flex-direction: column;
         gap: 0.5rem;
 
+        .item-completed {
+            text-decoration: line-through;
+            color: darkgrey;
+        }
+
         .item {
             display: flex;
             align-items: center;
             gap: 1rem;
-    
-            ::ng-deep {
-                .p-checkbox-box, .p-checkbox {
-                    width: 20px;
-                    height: 20px;
-                }
-            }
-
-            label {
-                flex-grow: 1;     
-            }
         }
-    }
 
-    .input-container {
-        margin-top: 0.5rem;
+        label {
+            flex-grow: 1;
+        }
+
+    }
+}
+
+.input-container {
+    margin-top: 0.5rem;
+
+    input {
+        padding: 0.2rem 0.6rem;
+        width: 15rem;
     }
 
 }

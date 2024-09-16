@@ -1,8 +1,8 @@
 <div class="component-container">
     <h2>To-Do</h2>
     <div class="list">
-            <div class="item" *ngFor="let todo of todos">
-                <p-checkbox [binary]="true" />
+            <div class="item" *ngFor="let todo of todos" [class.item-completed]="todo.completed">
+                <p-checkbox [ngModel]="todo.completed" [binary]="true" (onChange)="updateTodoState(todo.id, $event.checked)" />
                 {{ todo.name }}
                 <p-button icon="pi pi-times" [text]="true" severity="danger" (click)="deleteTodo(todo.id)" />
             </div>

@@ -26,11 +26,14 @@ export class TodoListComponent {
 
   saveTodo() {
     this.todoService.saveTodo(this.newTodo);
+    this.newTodo = '';
+  }
+
+  updateTodoState(id: string, completed: boolean) {
+    this.todoService.uptadeTodoState(id, completed);
   }
 
   deleteTodo(id: string) {
-    this.todoService.deleteTodo(id).then(() => {
-      this.todos = this.todos.filter(todo => todo.id !== id);
-    });
+    this.todoService.deleteTodo(id);
   }
 }
