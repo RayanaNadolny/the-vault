@@ -1,6 +1,13 @@
 .component-container {
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 6rem 2rem;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    p-editor {
+        flex-grow: 1;
+    }
+
 }
 
 input {

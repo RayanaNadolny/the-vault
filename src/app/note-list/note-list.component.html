@@ -1,3 +1,9 @@
 <div class="component-container">
-    
+    <h2>Notas</h2>
+    <div class="list">
+        <div class="item" *ngFor="let note of notes">
+            {{ note.name }}
+        </div>
+    </div>
+    <p-button icon="pi pi-plus" [text]="true" (click)="createEmptyNote()"/>
 </div>
