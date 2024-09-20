@@ -1,4 +1,4 @@
-<div class="component-container">
-    <input type="text" pInputText placeholder="Título"/>
-    <p-editor/>
-</div>
+<form [formGroup]="noteForm" class="component-container">
+    <input type="text" pInputText placeholder="Título" formControlName="name" />
+    <p-editor formControlName="content" />
+</form>

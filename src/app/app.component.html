@@ -1,6 +1,6 @@
 <div class="app-container">
   <app-header />
-  <app-note-list />
-  <app-main-content />
+  <app-note-list (noteSelected)="onNoteSelected($event)" />
+  <app-main-content [currentNote]="currentNote" />
   <app-todo-list />
 </div>

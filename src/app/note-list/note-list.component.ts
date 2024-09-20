@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, EventEmitter, inject, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/button';
 import { NotesService } from '../services/notes.service';
@@ -14,6 +14,8 @@ export class NoteListComponent {
   notesService = inject(NotesService);
   notes: any[] = [];
 
+  @Output() noteSelected = new EventEmitter();
+
   ngOnInit() {
     this.notesService.getNotes().subscribe(notes => {
       this.notes = notes;
@@ -22,5 +24,9 @@ export class NoteListComponent {
 
   createEmptyNote() {
     this.notesService.createEmptyNote();
+  }
+
+  onNoteClick(note: any) {
+    this.noteSelected.emit(note);
   }
 }

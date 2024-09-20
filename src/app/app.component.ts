@@ -14,4 +14,10 @@ import { TodoListComponent } from './todo-list/todo-list.component';
 })
 export class AppComponent {
   title = 'notes';
+
+  currentNote: any = null;
+
+  onNoteSelected(note: any) {
+    this.currentNote = note;
+  }
 }
