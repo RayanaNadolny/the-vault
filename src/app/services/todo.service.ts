@@ -23,7 +23,7 @@ export class TodoService {
     })
   }
 
-  uptadeTodoState(id: string, completed: boolean) {
+  updateTodoState(id: string, completed: boolean) {
     const docRef = doc(this.firestore, 'todos', id);
     updateDoc(docRef, {
       completed: completed

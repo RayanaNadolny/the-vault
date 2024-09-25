@@ -3,7 +3,8 @@
     <div class="list">
         <div class="item" *ngFor="let note of notes" (click)="onNoteClick(note)">
             {{ note.name }}
+            <p-button class="deleteButton" icon="pi pi-times" [text]="true" severity="danger" (click)="deleteNote(note.id)" />
         </div>
     </div>
-    <p-button icon="pi pi-plus" [text]="true" (click)="createEmptyNote()"/>
+    <p-button class="addButton" icon="pi pi-plus" [text]="true" (click)="createEmptyNote()"/>
 </div>

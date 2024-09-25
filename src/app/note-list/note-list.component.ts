@@ -29,4 +29,9 @@ export class NoteListComponent {
   onNoteClick(note: any) {
     this.noteSelected.emit(note);
   }
+
+  deleteNote(id: string) {
+    this.notesService.deleteNote(id);
+  }
+
 }

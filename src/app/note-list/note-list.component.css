@@ -27,5 +27,20 @@
         :first-child {
             border-top: solid #e0e0e0 1px;
         }
+
+        .deleteButton {
+            height: 10px;
+            width: 10px;
+            border: none;
+        }
+
     }
+
+    .addButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
 }

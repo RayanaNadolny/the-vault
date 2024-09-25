@@ -19,3 +19,11 @@ input {
     box-shadow: none;
     text-align: center;
 }
+
+p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #c2c2c2;
+}

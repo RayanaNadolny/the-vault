@@ -30,7 +30,7 @@ export class TodoListComponent {
   }
 
   updateTodoState(id: string, completed: boolean) {
-    this.todoService.uptadeTodoState(id, completed);
+    this.todoService.updateTodoState(id, completed);
   }
 
   deleteTodo(id: string) {

@@ -1,4 +1,6 @@
-<form [formGroup]="noteForm" class="component-container">
+<form [formGroup]="noteForm" class="component-container" *ngIf="currentNote">
     <input type="text" pInputText placeholder="Título" formControlName="name" />
     <p-editor formControlName="content" />
 </form>
+
+<p *ngIf="!currentNote">Nenhuma nota selecionada</p>

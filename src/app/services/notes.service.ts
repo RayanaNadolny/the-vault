@@ -23,7 +23,12 @@ export class NotesService {
     })
   }
 
-  deleteTodo(id: string) {
+  updateNote(id: string, fields: any) {
+    const docRef = doc(this.firestore, 'notes', id);
+    updateDoc(docRef, fields);
+  }
+
+  deleteNote(id: string) {
     const docRef = doc(this.firestore, 'notes', id);
     deleteDoc(docRef);
   }
