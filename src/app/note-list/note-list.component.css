@@ -14,17 +14,24 @@
         flex-direction: column;
 
         .item {
+            display: flex;
+            justify-content: space-between;
             border-bottom: solid #e0e0e0 1px;
             color: #1f1f1f;
             padding-top: 1rem;
             padding-bottom: 1rem;
-            overflow: hidden;
-            text-wrap: nowrap;
-            text-overflow: ellipsis;
+            padding-right: 1rem;
             cursor: pointer;
+            
+            span {
+                max-width: 90%;
+                overflow: hidden;
+                text-wrap: nowrap;
+                text-overflow: ellipsis;
+            }
         }
 
-        :first-child {
+        >:first-child {
             border-top: solid #e0e0e0 1px;
         }
 

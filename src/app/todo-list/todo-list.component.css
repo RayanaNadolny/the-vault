@@ -21,8 +21,16 @@
 
         .item {
             display: flex;
+            justify-content: space-between;
             align-items: center;
             gap: 1rem;
+
+            span {
+                max-width: 90%;
+                overflow: hidden;
+                text-wrap: nowrap;
+                text-overflow: ellipsis;
+            }
         }
 
         label {

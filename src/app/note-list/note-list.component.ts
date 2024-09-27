@@ -30,7 +30,8 @@ export class NoteListComponent {
     this.noteSelected.emit(note);
   }
 
-  deleteNote(id: string) {
+  deleteNote(id: string, event: any) {
+    event.stopPropagation();
     this.notesService.deleteNote(id);
   }
 

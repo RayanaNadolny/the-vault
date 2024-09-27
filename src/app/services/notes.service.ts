@@ -16,11 +16,12 @@ export class NotesService {
 
   createEmptyNote() {
     const collectionRef = collection(this.firestore, 'notes')
+    const name = prompt("Digite o nome");
 
     addDoc(collectionRef, {
-      name: "Sem Título",
+      name: name,
       content: ""
-    })
+    });
   }
 
   updateNote(id: string, fields: any) {

@@ -2,8 +2,8 @@
     <h2>Notas</h2>
     <div class="list">
         <div class="item" *ngFor="let note of notes" (click)="onNoteClick(note)">
-            {{ note.name }}
-            <p-button class="deleteButton" icon="pi pi-times" [text]="true" severity="danger" (click)="deleteNote(note.id)" />
+            <span>{{ note.name }}</span>
+            <p-button class="deleteButton" icon="pi pi-times" [text]="true" severity="danger" (click)="deleteNote(note.id, $event)" />
         </div>
     </div>
     <p-button class="addButton" icon="pi pi-plus" [text]="true" (click)="createEmptyNote()"/>
